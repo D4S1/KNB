@@ -1,0 +1,13 @@
+
+COPY auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
+9       pbkdf2_sha256$10000$9V2jTCBzlZ5a$whcoJhbjr0P+RRaY8usk7lMv/RHFqznPGkAsJ3XMnJI=   2016-04-16 20:02:45.624074+02   t       michal.krassowski                               t       t
+   2016-04-16 01:08:39+02
+3       pbkdf2_sha256$10000$iL9JKWlklBnI$VNiriOfbVVcx3dfmZVSO8TKRIEXbMCMR+aMLQyJFY/8=   2016-04-24 11:08:47.935511+02   t       maciosz                 a.macioszek@students.mimuw.edu.pl
+   t    t       2013-05-07 19:24:27+02
+10      pbkdf2_sha256$10000$4g7l3lUhsITx$5s5IWU0Y3eMloYd4/+IaR+7VnL4Ny30uWDpl1SpzXv8=   2016-04-25 00:57:14.878155+02   t       mateusz.legiecki        Mateusz Legięcki        mlegiecki@gma
+il.com  t       t       2016-04-16 01:08:55+02
+11      pbkdf2_sha256$10000$WCRMjxOzCKe0$oEmtitXFd7i2fbOnH6hgAX92fTNTFEPWTeaUAaXW7VU=   2016-04-26 12:16:20.445087+02   t       paulina.dlugoborska                             t       t
+   2016-04-16 01:10:07+02
+1       pbkdf2_sha256$10000$mlQD0lk71BQM$abnqqSIyz0L0uTUN/ggMOG9sIZQk6Yf+Ph6FpYfM76Q=   2015-03-14 23:19:49.302262+01   t       zero323                 trzy.dwa.trzy@gmail.com t       t
+   2013-05-07 18:58:50+02
+\.

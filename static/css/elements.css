@@ -1,0 +1,59 @@
+.block{
+    margin-bottom:2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 2px;
+    grid-template-areas:
+        "left middle right"
+}
+
+/* Text area in block */
+.block-text-left, .block-text-right{
+    padding: 10vh 2vw 10vh 2vw;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+}
+.block-text-left{
+    grid-area: left;
+}
+
+.block-text-right{
+    grid-area: right;
+}
+
+/* photo styling */
+.block-photo-left img, .block-photo-right img{
+    width: 100%;
+}
+
+.block-photo-right{
+    padding: 10vh 0 10vh 0;
+    grid-column: middle/right;
+}
+
+.block-photo-left{
+    padding: 10vh 0 10vh 0;
+    grid-column: left/middle;
+}
+
+/* enable overlap */
+.block-right, .block-middle, .block-right, .block-photo-left, .block-photo-right{
+    grid-row: 1;
+}
+
+/* empty divs with background */
+.block-left{
+    grid-area: left;
+}
+
+.block-middle{
+    grid-area: middle;
+}
+
+.block-right{
+    grid-area: right;
+}

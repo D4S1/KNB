@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KNB</title>
+    <link rel="stylesheet" href="../../static/css/color.css">
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+<body class="main-container">
+
+<div class="logo bg-sunny"><img class="logo-img" id="logo" src="../../static/graphics/logo.png" alt=”Logo” height=250 width=220></div>
+<div class="header bg-sunny">Koło<br> Naukowe <br>Bioinformatyki</div>
+<div class="menu bg-sunny">
+    <ul class="menu-list" id="menu">
+        <li><a href="{% url 'knb_app:home' %}">Home</a></li>
+        <li><a href="#">Aktualności</a></li>
+        <li><a href="#">Projekty</a></li>
+        <li><a href="#">Studia</a></li>
+        <li><a href="{% url 'knb_app:board' %}">Zarząd</a></li>
+    </ul>
+</div>
+
+<div class="l-side bg-sunny"></div>
+
+<div class="main">
+    {%block content %}
+    {% endblock %}
+
+</div>
+
+<div class="r-side bg-sunny"></div>
+
+<div class="footer bg-violet">
+    <div class="footer-main">
+        <img src="../../static/graphics/logo2.png" alt=”Logo1” height=350 width=600>
+        <div>
+            <h2>Kontakt</h2>
+            <div>Email: bibs.kn@uw.edu.pl</div>
+            <div><a href="https://www.facebook.com/Bioinformatyka.UW/?locale=pl_PL"><i class="bi bi-facebook"></i> Bioinformatyka i biologia systemów UW</a></div>
+        </div>
+    </div>
+    <div class="creators">
+        <div>Logo by ...</div>
+        <div>Powered by <a href="https://www.djangoproject.com/" class="dark-green">Django</a></div>
+    </div>
+</div>
+
+ <script src="../../static/js/app.js"></script>
+</body>
+</html>

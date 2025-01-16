@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="bg-sunny">
+<h2>Członkowei zarządu</h2>
+
+<ul>
+    <li><i>Prezes</i> Stanisław Gołębiewski</li>
+    <li><i>Wiceprezes</i> Michał Stanowski</li>
+    <li><i>Wiceprezes</i> Joanna Dąbrowska</li>
+</ul>
+
+<h2>Regulamin</h2>
+    {% include "knb_app/statute.html" %}
+
+</div>
+{% endblock %}
